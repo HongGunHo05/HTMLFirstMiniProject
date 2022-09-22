@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8efed;
+    font-family: "Jua", sans-serif;
+    font-size: 20px;
+    padding-left: 26rem;
+}
+
+li a:hover,
+a:active {
+    color: purple;
+}
+
+div {
+    display: block;
+}
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22rem;
+    height: 100vh;
+    background-color: #ccd8ed;
+}
+
+.contents {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.contentslist {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 1.8rem;
+    color: white;
+}
+.contentslist a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------ */
+/* 혜택정보 */
+.benefitInfo,
+.selectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefitInfo img {
+    width: 5rem;
+}
+
+#cardBenefit {
+    display: flex;
+    width: 60rem;
+    max-width: max-content;
+    margin-bottom: 1rem;
+}
+
+#cardBenefit div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 15rem;
+    margin: 1rem;
+}
+
+#CardIMG img {
+    width: 10rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* 제휴카드 */
+
+/* 섹션 사이드바 */
+
+.selectCardSection {
+    display: flex;
+}
+
+#selectCardSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 20rem;
+    height: 100vh;
+    background-color: #ccd8ed;
+    color: white;
+    font-size: 2rem;
+}
+
+#selectCardbody {
+    display: flex;
+    justify-content: center;
+    padding-left: 4rem;
+}
+
+#card1 div,
+#card2 div,
+#card3 div {
+    margin-top: 10rem;
+}
+
+#card1 img,
+#card2 img,
+#card3 img {
+    width: 15rem;
+}
+
+.cd {
+    display: none;
+}

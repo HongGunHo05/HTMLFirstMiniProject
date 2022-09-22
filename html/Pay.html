@@ -1,90 +1,236 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>main</title>
-        <style>
-            @import url(../css/pay.css);
-        </style>
-    </head>
 
-    <body>
-        <nav class="sidenav">
-            <div class="contents">
-                <ul class="contentslist">
-                    <li><a href="#">1일 요금</a></li>
+<head>
+    <title>main</title>
+    <style>
+        @import url(../css/pay.css);
+    </style>
+</head>
 
-                    <li>
-                        <a href="#">
-                            <details>
-                                <summary>운영가이드</summary>
-                                <ul>
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                </ul>
-                            </details>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <footer id="123"></footer>
-        </nav>
-        <!-- 사이드 바 -->
-
-        <div class="realbody">
-
-            <div>
-                <!--1일 요금-->
-                <div class="oneday">
-                    <h1>1day</h1>
-                    <table>
-                        <tr>
-                            <td>어른</td>
-                            <td>62,000원</td>
-                        </tr>
-                        <tr>
-                            <td>청소년</td>
-                            <td>54,000원</td>
-                        </tr>
-                        <tr>
-                            <td>어린이</td>
-                            <td>47,000원</td>
-                        </tr>
-                        <tr>
-                            <td>베이비</td>
-                            <td>15,000원</td>
-                        </tr>
-                    </table>
-
-                    <h1>after 4</h1>
-                    <table>
-                        <tr>
-                            <td>어른</td>
-                            <td>50,000원</td>
-                        </tr>
-                        <tr>
-                            <td>청소년</td>
-                            <td>43,000원</td>
-                        </tr>
-                        <tr>
-                            <td>어린이</td>
-                            <td>36,000원</td>
-                        </tr>
-                        <tr>
-                            <td>베이비</td>
-                            <td>15,000원</td>
-                        </tr>
-                    </table>
-                </div>
-            </div><!--1일 요금-->
-
-            <div>
-                
-            </div>
-
-
-
+<body>
+    <nav class="sidenav">
+        <div class="contents">
+            <ul class="contentslist">
+                <li><a href="#">종합이용권</a></li>
+                <li><a href="#magicpass">매직패스 프리미엄</a></li>
+                <li><a href="#UsePark">파크이용권</a></li>
+                <li><a href="#precaution">주의사항</a></li>
+                <li><a href="../html/Main.html">돌아가기</a></li>
+            </ul>
         </div>
-    </body>
+
+        <footer id="123"></footer>
+    </nav>
+    <!-- 사이드 바 -->
+
+    <div class="realbody">
+
+        <!--1일 요금-->
+        <div>
+            <div id="allday">
+
+            </div>
+            <div class="oneday">
+                <h1>종일이용권</h1>
+                <h2>1day</h2>
+                <table>
+                    <tr>
+                        <td>어른</td>
+                        <td>62,000원</td>
+                    </tr>
+                    <tr>
+                        <td>청소년</td>
+                        <td>54,000원</td>
+                    </tr>
+                    <tr>
+                        <td>어린이</td>
+                        <td>47,000원</td>
+                    </tr>
+                    <tr>
+                        <td>베이비</td>
+                        <td>15,000원</td>
+                    </tr>
+                </table>
+
+                <h2>after 4</h2>
+                <table>
+                    <tr>
+                        <td>어른</td>
+                        <td>50,000원</td>
+                    </tr>
+                    <tr>
+                        <td>청소년</td>
+                        <td>43,000원</td>
+                    </tr>
+                    <tr>
+                        <td>어린이</td>
+                        <td>36,000원</td>
+                    </tr>
+                    <tr>
+                        <td>베이비</td>
+                        <td>15,000원</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--1일 요금-->
+
+        <!-- 매직패스 프리미엄 -->
+        <div class="magicpass" id="magicpass">
+            <h1>매직패스프리미엄</h1>
+            <table>
+                <tr>
+                    <td>5회권</td>
+                    <td>49,000원</td>
+                </tr>
+                <tr>
+                    <td>10회권</td>
+                    <td>89,000원</td>
+                </tr>
+                <tr>
+                    <td>대상</td>
+                    <td>당일 종합이용권 또는 파크이용권 이용고객, 연간이용 고객 <br />
+                        (※구매당일 한정, 1인 1매 사용)</td>
+                </tr>
+                <tr>
+                    <td>혜택</td>
+                    <td>사전 탑승 예약없이 어트랙션의 매직패스 대기라인 이용</td>
+                </tr>
+                <tr>
+                    <td>판매처</td>
+                    <td>무인티켓키오스크 5개소<br />
+                        (지하1층 정문매표소 17번 키오스크, 만남의 광장 안내데스크, 키즈토리아 입구, 드래곤 와일드슈팅 출구, 매직캐슬)
+                    </td>
+                </tr>
+            </table>
+            <h5>※ 일일 한정 수량 판매로 인하여 조기 판매 중단될 수 있습니다.</h5>
+            <h5>※ 당일 운영상황에 따라 매표소 운영시간은 다소 변동될 수 있습니다.</h5>
+        </div>
+
+        <!--파크이용권-->
+        <div>
+            <div id="UsePark">
+
+            </div>
+            <div class="oneday">
+                <h1 id="parkh1">파크이용권</h1>
+                <h2>1day</h2>
+                <table>
+                    <tr>
+                        <td>어른</td>
+                        <td>59,000원</td>
+                    </tr>
+                    <tr>
+                        <td>청소년</td>
+                        <td>52,000원</td>
+                    </tr>
+                    <tr>
+                        <td>어린이</td>
+                        <td>46,000원</td>
+                    </tr>
+                    <tr>
+                        <td>베이비</td>
+                        <td>15,000원</td>
+                    </tr>
+                </table>
+
+                <h2>after 4</h2>
+                <table id="parktable2">
+                    <tr>
+                        <td>어른</td>
+                        <td>47,000원</td>
+                    </tr>
+                    <tr>
+                        <td>청소년</td>
+                        <td>41,000원</td>
+                    </tr>
+                    <tr>
+                        <td>어린이</td>
+                        <td>35,000원</td>
+                    </tr>
+                    <tr>
+                        <td>베이비</td>
+                        <td>15,000원</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--파크이용권-->
+
+
+        <!-- 주의사항 -->
+        <div class="precaution" id="precaution">
+            <h1> 꼭 알아두세요! </h1>
+            <div>
+                <h3>연령에 따른 요금 적용 안내 <br /> (나이 확인이 가능한 신분증 또는 서류 제시)</h3>
+                <table>
+                    <tr>
+                        <td>
+                            0~12개월 미만
+                        </td>
+                        <td>
+                            파크 입장 및 유아 놀이시설(키즈토리아 등) 무료 이용
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12개월 이상 36개월 미만
+                        </td>
+                        <td>
+                            파크 입장 무료(단, 단체 입장객 제외)<br />
+                            유아 놀이시설 이용은 유료로 이용 가능
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            36개월 이상 ~ 만 12세
+                        </td>
+                        <td>
+                            어린이 요금 적용
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            만 13세 이상 ~ 만 18세
+                        </td>
+                        <td>
+                            청소년 요금 적용(학교 및 학년 무관)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            만 65세 이상
+                        </td>
+                        <td>
+                            어린이 요금 적용(기타 우대 적용불가)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3>유아놀이시설</h3>
+                <table>
+                    <tr>
+                        <td>어드벤쳐</td>
+                        <td>매직붕붕카, 햇님달님, 어린이 범퍼카, 로티트레인, <br />
+                            스윙팡팡, 유레카, 키즈토리아, 언더씨킹덤,
+                            드림보트</td>
+                    </tr>
+                    <tr>
+                        <td>매직아일랜드</td>
+                        <td>
+                            머킹의 회전목마, 쁘띠빵빵
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 주의사항 -->
+    </div>
+</body>
+
 </html>

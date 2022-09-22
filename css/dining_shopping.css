@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+li a:hover,
+a:active {
+    color: purple;
+}
+
+/***** reset *****/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: top;
+    border: 0;
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+body {
+    color: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8efed;
+    font-family: "Jua", sans-serif;
+    font-size: 20px;
+    padding-left: 26rem;
+}
+
+div {
+    display: block;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22rem;
+    height: 100vh;
+    background-color: #ccd8ed;
+}
+
+.contents {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.contentslist {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.contentslist a {
+    color: white;
+    text-decoration: none;
+}
+
+/***** sidenavLeft *****/
+.sidenav {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22rem;
+    height: 100vh;
+    background-color: #ccd8ed;
+}
+
+/***** sidenavRight *****/
+.sidenavRight {
+    float: right;
+}
+
+/* .wrap {width: 100%; height: 700px; margin: 0 auto;} */
+
+/***** 확장형 header *****/
+header {
+    width: 100%;
+    height: 100px;
+    background: #f8efed;
+    display: flex;
+    align-items: center;
+    z-index: 500;
+    position: relative;
+}
+
+/* logo */
+header .logo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* float:left; */
+}
+
+/* menu */
+header nav {
+    width: 1200px;
+    height: 160px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    right: 20px;
+}
+
+/* mainMenu */
+header nav > ul.mainMenu {
+    width: 100%;
+}
+header nav > ul.mainMenu > li {
+    width: 25%;
+    float: left;
+    padding-left: 30px;
+    position: relative;
+}
+header nav > ul.mainMenu > li > a {
+    display: block;
+    background: (209, 60%, 63%);
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+}
+header nav > ul.mainMenu > li > a:hover {
+    color: #fff;
+}
+
+/* subMenu */
+header nav > ul.mainMenu > li > ul.subMenu {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    display: none;
+}
+header nav > ul.mainMenu > li > ul.subMenu > li {
+    background: rgb(0, 0, 0, 0.6);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+header nav > ul.mainMenu > li > ul.subMenu > li:hover {
+    background: #111;
+}
+
+/***** imgSlide (페이드) *****/
+.imgSlide {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+/***** middle *****/
+.middle {
+    width: 1200px;
+    height: 200px;
+}
+.middle section {
+    width: 33.33333%;
+    height: 200px;
+    float: left;
+}
+
+/* dining_shopping (tab_menu) */
+.middle .dining_shopping {
+    width: 400px;
+    height: 200px;
+    background: rgba(119, 119, 119, 0.1);
+}
+.middle .dining_shopping .tab_menu {
+    width: 100%;
+    height: 40px;
+}
+.middle .dining_shopping .tab_menu #tab1 {
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background: #fff;
+    color: rgb(44, 44, 170);
+    font-weight: bold;
+}
+.middle .dining_shopping .tab_menu #tab2 {
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: -5px;
+    background: #fff;
+    color: rgb(44, 44, 170);
+    font-weight: bold;
+}
+.middle .dining_shopping .tab_menu #tab1:hover {
+    text-decoration: underline;
+}
+.middle .dining_shopping .tab_menu #tab2:hover {
+    text-decoration: underline;
+}
+
+/* dining */
+/* .middle .dining_shopping .dining {width: 400px; height: 150px;} */
+.middle .dining_shopping .dining ul {
+    background: #fff;
+    width: 380px;
+    height: 150px;
+    margin-left: 10px;
+}
+.middle .dining_shopping .dining ul li {
+    height: 37.5px;
+    line-height: 37.5px;
+    padding-left: 10px;
+    font-size: 10px;
+}
+.middle .dining_shopping .dining ul li:nth-child(even) {
+    background: rgba(194, 202, 229, 0.8);
+}
+
+/* shopping */
+/* .middle .dining_shopping .shopping {width: 400px; height: 150px;} */
+.middle .dining_shopping .shopping ul {
+    background: #fff;
+    width: 380px;
+    height: 150px;
+    margin-left: 10px;
+}
+.middle .dining_shopping .shopping ul li {
+    float: left;
+    padding-left: 8px;
+    margin: 30px 18px;
+}
+
+/***** 확장형 footer *****/
+footer {
+    width: 100%;
+    height: 100px;
+    background: #f8efed;
+    position: relative;
+    display: flex;
+}
+
+/* logo */
+footer .footer_logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* copyright */
+footer .copyright {
+    width: 800px;
+    height: 100px;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sns */
+footer .sns {
+    width: 200px;
+    height: 100px;
+    /* position: absolute;  */
+    right: 5px;
+    top: 20px;
+    padding-top: 10px;
+}
+footer .sns span {
+    padding: 3px;
+}

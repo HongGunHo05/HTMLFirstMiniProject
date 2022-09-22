@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel='stylesheet' type='text/css' href="../css/main1.css">
+	<title>parade.html</title>
+
+	<script type="text/javascript">
+
+		function toggleImg() {
+			document.getElementById("img").src = "../images/photo.png";
+		}
+		function toggleImg1() {
+			document.getElementById("img").src = "../images/attack.png";
+		}
+		function toggleImg2() {
+			document.getElementById("img").src = "../images/A.png";
+		}
+
+	</script>
+</head>
+
+<body>
+	<nav class="sidenav">
+		<div class="contents">
+			<ul class="contentslist">
+				<li><a href="#paradeInfo">공연 안내</a></li>
+				<li><a href="#prpromotion">공연 사진, 영상</a></li>
+				<li><a href="#">맨 위로 올라가기</a></li>
+				<li><a href="../html/Main.html">돌아가기</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="realbody">
+		<div class="parade">
+			<div class="intro_bg">
+				<div class="header">
+					<strong>
+						<h1>
+							<li><span style="color: b;">페스티벌</span></li>
+						</h1>
+					</strong><br>
+					<h4>
+						<li><span style="color: black;">시즌별로 새로워지는 롯데월드 페스티벌을
+								만나보세요!</span></li>
+					</h4>
+					<br>
+
+					<div class="body1" id="paradeInfo">
+						<img src="../images/info.jpg" />
+						<h3>
+							<li><span style="color: black;">공연안내</span></li>
+						</h3>
+						<br>
+					</div>
+
+
+					<div class="button1">
+						<img id="img">
+						<button type="button" class="btn btn-dark" onclick="toggleImg()">자이언트
+							좀비 포토타임</button>
+						<button type="button" class="btn btn-danger" onclick="toggleImg1()">좀비어택</button>
+						<button type="button" class="btn btn-primary" onclick="toggleImg2()">통제구역A</button>
+					</div>
+
+					<div id="prpromotion">
+						<img src="https://www.lotteworld.com/_img/festival/festival/festival_03_01.jpg" width="610"><br>
+					</div>
+					<div>
+						<h2>서울 잠실에 좀비가 출현했다!!!</h2>
+						<br>
+					</div>
+
+					<iframe width="600" height="350" src="https://www.youtube.com/embed/InECWqP0VNI"></iframe>
+
+					<img src="https://thumb.mt.co.kr/06/2018/08/2018082810004953511_1.jpg/dims/optimize/" width="610">
+
+
+					<p></p>
+
+					<iframe width="600" height="350" src="https://www.youtube.com/embed/zM_uUCooqvM"> </iframe>
+
+					<p></p>
+					<h1>
+						<span style="color: white;">퍼레이드 보러 오세요!</span>
+					</h1>
+					<br> <img src="../images/main.jpg" />
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+
+</html>

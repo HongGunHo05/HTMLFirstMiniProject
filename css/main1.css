@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8efed;
+    font-family: "Jua", sans-serif;
+    font-size: 20px;
+    padding-left: 26rem;
+}
+
+li a:hover,
+a:active {
+    color: purple;
+}
+
+div {
+    display: block;
+}
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22rem;
+    height: 100vh;
+    background-color: #ccd8ed;
+}
+
+.contents {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.contentslist {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 1.8rem;
+    color: white;
+}
+.contentslist a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------------------- */
+
+li {
+    list-style: none;
+}
+table,
+th,
+td {
+    border: 1px solid #bcbcbc;
+}
+table {
+    width: 600px;
+}
+
+video {
+    max-width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+.intro {
+    background-image: url("../images/img11.jpg");
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro_bg {
+    background-image: url("../images/img0.jpg");
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    padding-top: 300px;
+    width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    font-style: white;
+}
+
+.body1 {
+    width: 100%;
+    text-align: center;
+}
+
+.infodate {
+    border: 1px solid black;
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    border-color: black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.button1 {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+#prpromotion {
+    margin-top: 10rem;
+}
